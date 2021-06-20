@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '90c8cf38-fc19-431a-b1a1-26b0a98efed8'
   imageRepository: 'garbageschedulereminder'
   containerRegistry: 'mmsky.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/GarbageScheduleReminder/GarbageScheduleReminder/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/GarbageScheduleReminder/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
