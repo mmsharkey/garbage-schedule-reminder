@@ -5,8 +5,8 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["GarbageScheduleReminder/GarbageScheduleReminder.csproj", "GarbageScheduleReminder/"]
-RUN dotnet restore "GarbageScheduleReminder/GarbageScheduleReminder.csproj"
+COPY ["GarbageScheduleReminder.csproj", "GarbageScheduleReminder/"]
+RUN dotnet restore "GarbageScheduleReminder.csproj"
 COPY . .
 WORKDIR "/src/GarbageScheduleReminder"
 RUN dotnet build "GarbageScheduleReminder.csproj" -c Release -o /app/build
