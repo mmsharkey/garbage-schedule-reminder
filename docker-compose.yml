@@ -1,0 +1,4 @@
+version: "3.9"
+services:
+  garbage_schedule_reminder:
+    image: "mmsky.azurecr.io/garbage_reminder{TAG}"

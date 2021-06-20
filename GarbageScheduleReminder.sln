@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageScheduleReminder", "GarbageScheduleReminder\GarbageScheduleReminder.csproj", "{B1BACEBB-D8A4-4D68-B5F3-82C38578713F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageScheduleReminder.Tests", "GarbageScheduleReminder.Tests\GarbageScheduleReminder.Tests.csproj", "{3D2E10DD-B06E-4FCB-9633-5C931A57EB23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1BACEBB-D8A4-4D68-B5F3-82C38578713F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BACEBB-D8A4-4D68-B5F3-82C38578713F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BACEBB-D8A4-4D68-B5F3-82C38578713F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BACEBB-D8A4-4D68-B5F3-82C38578713F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D2E10DD-B06E-4FCB-9633-5C931A57EB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D2E10DD-B06E-4FCB-9633-5C931A57EB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D2E10DD-B06E-4FCB-9633-5C931A57EB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D2E10DD-B06E-4FCB-9633-5C931A57EB23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B59FFE5-EE90-4F96-AF5D-1FC1A32FB59A}
+	EndGlobalSection
+EndGlobal
