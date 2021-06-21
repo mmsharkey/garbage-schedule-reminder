@@ -14,7 +14,7 @@ variables:
   imageRepository: 'garbageschedulereminder'
   containerRegistry: 'mmsky.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: '$(Build.BuildNumber)'
 
   # Agent pool
   agentPool: 'my-agent'
@@ -35,7 +35,7 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          $(tag)
+          $(Build.BuildNumber)
     - task: CmdLine@2
       inputs:
         script: 'TAG=$(Build.BuildNumber) docker stack deploy -c docker-compose.yml garbage-scheduler'
