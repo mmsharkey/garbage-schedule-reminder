@@ -17,7 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'my-agent'
+  vmImageName: 'webserver-01'
 
 stages:
 - stage: Build
