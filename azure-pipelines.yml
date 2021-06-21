@@ -39,4 +39,4 @@ stages:
           $(tag)
     - task: CmdLine@2
       inputs:
-        script: 'docker stack deploy -c docker-compose.yml garbage-scheduler'
+        script: '$(TAG) docker stack deploy -c docker-compose.yml garbage-scheduler'
