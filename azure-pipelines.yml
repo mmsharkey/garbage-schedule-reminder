@@ -16,8 +16,8 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
-  # Agent VM image name
-  vmImageName: 'webserver-01'
+  # Agent pool
+  agentPool: 'my-agent'
 
 stages:
 - stage: Build
@@ -25,8 +25,7 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool:
-      vmImage: $(vmImageName)
+    pool: $(agentPool)
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
