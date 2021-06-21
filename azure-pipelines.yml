@@ -38,5 +38,5 @@ stages:
           $(tag)
     - task: CmdLine@2
       inputs:
-        script: '$(TAG) docker stack deploy -c docker-compose.yml garbage-scheduler'
-        workingDirectory: '$(Build.SourcesDirectory'
+        script: 'TAG=$(Build.BuildNumber) docker stack deploy -c docker-compose.yml garbage-scheduler'
+        workingDirectory: '$(Build.SourcesDirectory)'
